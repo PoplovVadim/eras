@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'); /*fearless font*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /*1989 font*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); /*lover font*/
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap'); /*folklore and evermore font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /*main font*/
+
+@font-face {
+    font-family: 'Satisfaction';
+    src: url('../assets/fonts/Satisfaction.ttf');
+} /*debut font*/
+
+@font-face {
+    font-family: 'Mina';
+    src: url('../assets/fonts/Mina-Regular.otf');
+} /*speak now font*/
+
+@font-face {
+    /* font-family: 'TungstenNarrow';
+    src: url('../assets/fonts/Tungsten-SemiBold.ttf'); */
+    font-family: 'Kapra';
+    src: url('../assets/fonts/Typoforge-Studio-Kapra-Neue-Pro-Regular-Italic-Expanded.otf');
+} /*red font*/
+
+@font-face {
+    font-family: 'OPTIEngraversOldEnglish';
+    src: url('../assets/fonts/OPTIEngraversOldEnglish.otf');
+} /*reputation font*/
+
+@font-face {
+    font-family: 'NeueHaasDisplay';
+    src: url('../assets/fonts/NeueHaasDisplay-Medium.woff');
+} /*midnights font*/
+
+@font-face {
+    font-family: 'Big Caslon';
+    src: url('../assets/fonts/BigCaslonFB-Bold.ttf');
+}

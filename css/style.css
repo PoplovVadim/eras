@@ -1,0 +1,257 @@
+@import url('fonts.css');
+@import url('reset.css');
+
+* {
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+#main .row > * {
+    padding: 0;
+    flex: 1 0 auto;
+}
+
+.accordion {
+    --bs-accordion-bg: none;
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-width: none;
+    --bs-accordion-border-radius: none;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    margin-bottom: 1em;
+}
+.accordion-header {
+    cursor: pointer;
+}
+.accordion-button {
+    font-size: inherit;
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+}
+.album-card img {
+    width: 320px;
+    margin: 50px auto 30px auto;
+    transition-duration: .5s;
+}
+.album-card img:hover {
+    transform: scale(0.85);
+}
+
+#main section,
+.album h1 {
+    font-size: 1.6em;
+}
+#main section div {
+    transition: border-color .2s;
+}
+#main h1,
+.album header {
+    height: 68px;
+    text-shadow: 2px 2px 2px black;
+}
+#main .red h1,
+#main ._1989 h1, 
+#main .lover h1,
+#main .folklore h1, 
+#main .evermore h1 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+#main .ttpd h1 {
+    text-shadow: none;
+}
+#main h1,
+.album h1 {
+    padding: 0.7em 0;
+}
+#main a {
+    display: block;
+    width: 50%;
+    border-bottom: 3px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 7px;
+    margin: 0 auto 1em auto;
+    transition-duration: .1s;
+    font-family: 'NeueHaasDisplay';
+    background-color: rgba(0,0,0,.1);
+    position: relative;
+}
+#main .taylor-swift h1 {
+    font-size: 0.9em;
+    padding: 1em 0;
+}
+#main .fearless h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+#main .speak-now h1 {
+    padding: 1.5em 0 0 0; 
+}
+#main .red h1 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+    padding: 0.3em 0;
+}
+#main .reputation h1 {
+    padding: 0.6em 0;
+}
+#main .ttpd h1, 
+#ttpd header {
+    font-size: 1em;
+    padding: 0.8em 0;
+    letter-spacing: 1px;
+}
+
+.album header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+    z-index: 1000;
+}
+.album main {
+    width: 100%;
+    padding: 2em 0;
+    font-family: Montserrat;
+}
+.content {
+    width: 70%;
+    background-color: rgba(255, 255, 255, .2);
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+h2 {
+    border: 5px solid white;
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 0.45em 0;
+}
+h2:hover {
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, .5) 50%, transparent);
+}
+h3 {
+    margin: 1em;
+    font-size: 1.75em;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 15px;
+    padding: 0.45em 0;
+}
+
+.gen-info img {
+    margin: 0 2em;
+    transition-duration: .5s;
+    width: 350px;
+}
+.gen-info img, .add img {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+.gen-info img:hover, .add img:hover {
+    transform: scale(1.05);
+}
+.gen-info ul {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+.gen-info li {
+    text-align: start;
+}
+.gen-info li span:first-child {
+    font-weight: bold;
+}
+
+.editions div img {
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+.editions .row {
+    gap: 2em 0;
+    justify-content: center;
+}
+.editions h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.singles, .add {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.singles img {
+    width: 100px;
+    height: 100px;
+}
+/* .singles li, .singles p, span {
+    font-size: smaller;
+} */
+.singles ul {
+    margin-top: 0.5em;
+}
+.singles figure {
+    background-color: white;
+    margin: 2em 1em;
+    border-radius: 10px;
+    transition-duration: .5s;
+    padding: 1em;
+    flex: 0 1 170px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.singles figure:hover {
+    transform: scale(1.1);
+}
+.singles figure a {
+    display: block;
+    text-decoration: none;
+}
+.singles figure img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+.singles figure > a {
+    font-weight: bold;
+    color: black;
+    margin: 0.5em 0;
+}
+.singles figure a:hover, .add figcaption a:hover {
+    text-decoration: underline;
+}
+.singles figure p {
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    padding: 0.5em 0;
+}
+.singles figure p:nth-of-type(2) {
+    border-top: none;
+}
+li a {
+    display: inline;
+}
+.add {
+    border-top: 3px dashed white;
+}
+.add figure {
+    padding: 1.5em;
+    width: 25%;
+}
+.add img {
+    width: 200px;
+    height: 200px;
+    transition-duration: .5s;
+}
+.add figure figcaption:nth-child(2) {
+    margin: 1em;
+}
+

@@ -166,7 +166,7 @@ if (rowNode) {
     for (let i = 0; i < albumsInfo.length; i++) { 
         let info = albumsInfo[i];
         rowNode.innerHTML += `<div class="col">
-                                <section class="album-card ${info.id}">
+                                <section class="album-card">
                                     <h1>${info.title}</h1>
                                     <div>
                                         <img src="assets/images/${info.id}/${info.imgTitle}.png" />
@@ -174,8 +174,17 @@ if (rowNode) {
                                     </div>
                                 </section>
                               </div>`;
+        if (i == 4) {
+            rowNode.querySelector(`section`).classList.add(`_1989`);
+        } else {
+            rowNode.querySelector(`section`).classList.add(`${info.id}`);
+        }
         if (i > 0 && i < 5) {
-            rowNode.querySelector(`.${info.id} img`).src=`assets/images/${info.id}/${info.imgTitle}-tv.png`;
+            if (i == 4) {
+                rowNode.querySelector(`._1989 img`).src=`assets/images/${info.id}/${info.imgTitle}-tv.png`;
+            } else {
+                rowNode.querySelector(`.${info.id} img`).src=`assets/images/${info.id}/${info.imgTitle}-tv.png`;
+            }
         }
         let idNode = document.querySelector(`#main .${info.id}`);
         idNode.style.backgroundColor = info.bgColor;

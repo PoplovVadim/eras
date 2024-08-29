@@ -63,7 +63,7 @@ let albumsInfo = [
             ['The More Red (Taylor\'s Version) Chapter', 'March 17, 2023', 'c-red-tv-mrtv']]
     },
     {
-        id: '_1989',
+        id: 'nten',
         title: '1989',
         imgTitle: 'a-1989',
         bgColor: 'rgb(165,198,227)',

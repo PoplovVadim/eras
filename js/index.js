@@ -63,7 +63,7 @@ let albumsInfo = [
             ['The More Red (Taylor\'s Version) Chapter', 'March 17, 2023', 'c-red-tv-mrtv']]
     },
     {
-        id: '1989',
+        id: 'nten',
         title: '1989',
         imgTitle: 'a-1989',
         bgColor: 'rgb(165,198,227)',
@@ -166,7 +166,7 @@ if (rowNode) {
     for (let i = 0; i < albumsInfo.length; i++) { 
         let info = albumsInfo[i];
         rowNode.innerHTML += `<div class="col">
-                                <section class="album-card">
+                                <section class="album-card ${info.id}">
                                     <h1>${info.title}</h1>
                                     <div>
                                         <img src="assets/images/${info.id}/${info.imgTitle}.png" />
@@ -174,17 +174,8 @@ if (rowNode) {
                                     </div>
                                 </section>
                               </div>`;
-        if (i == 4) {
-            rowNode.querySelector(`section`).classList.add(`_1989`);
-        } else {
-            rowNode.querySelector(`section`).classList.add(`${info.id}`);
-        }
         if (i > 0 && i < 5) {
-            if (i == 4) {
-                rowNode.querySelector(`._1989 img`).src=`assets/images/${info.id}/${info.imgTitle}-tv.png`;
-            } else {
-                rowNode.querySelector(`.${info.id} img`).src=`assets/images/${info.id}/${info.imgTitle}-tv.png`;
-            }
+            rowNode.querySelector(`.${info.id} img`).src=`assets/images/${info.id}/${info.imgTitle}-tv.png`;
         }
         let idNode = document.querySelector(`#main .${info.id}`);
         idNode.style.backgroundColor = info.bgColor;

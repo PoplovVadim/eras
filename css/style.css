@@ -255,3 +255,8 @@ li a {
     margin: 1em;
 }
 
+@media (min-width: 1400px) and (max-width: 1647px) {
+    #main .ttpd h1, #ttpd header {
+        padding: 0.3em 0;
+    }
+}
